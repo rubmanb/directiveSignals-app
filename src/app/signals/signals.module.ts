@@ -5,13 +5,15 @@ import { SignalsLayoutComponent } from './layout/signals-layout/signals-layout.c
 import { CounterPageComponent } from './pages/counter-page/counter-page.component';
 import { UserinfoPageComponent } from './pages/userinfo-page/userinfo-page.component';
 import { PropertiesPagesComponent } from './pages/properties-pages/properties-page.component';
+import { SideMenuComponent } from './components/side-menu/side-menu.component';
 
 @NgModule({
   declarations: [
     SignalsLayoutComponent,
     CounterPageComponent,
     UserinfoPageComponent,
-    PropertiesPagesComponent
+    PropertiesPagesComponent,
+    SideMenuComponent
   ],
   imports: [
     CommonModule,
