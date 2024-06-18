@@ -1,1 +1,23 @@
-<p>properties-pages works!</p>
+<h1>Mutaciones</h1>
+<hr>
+
+<div class="row">
+  <div class="col-6">
+
+    <input type="text" class="form-control mb-2"
+      [value]="this.user().email" (input)="onFieldUpdated('email', txtemail.value)" #txtemail>
+
+    <input type="text" class="form-control mb-2"
+      [value]="this.user().first_name" (input)="onFieldUpdated('first_name', txtfirstname.value)" #txtfirstname>
+
+    <input type="text" class="form-control mb-2"
+      [value]="this.user().last_name" (input)="onFieldUpdated('last_name', txtlastname.value)" #txtlastname>
+
+  </div>
+  <div class="col-6">
+    <pre>
+      {{user() | json}}
+    </pre>
+    <button class="btn btn-primary" (click)="increaseBy(1)">+1</button>
+  </div>
+</div>
